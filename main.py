@@ -11,6 +11,7 @@ class User(BaseModel):
     email: EmailStr
 
 
+
 users: List[User] = [
     User(id=1, username="john_doe", email="john@example.com"),
     User(id=2, username="alice", email="alice@example.com"),
