@@ -17,10 +17,10 @@ users: List[User] = [
 
 @app.get("/get_users", response_model=List[User])
 def get_users():
-    return {"message": "Good get did", "List users: ": users}
+    return {"message": "Good get did ", "List users: ": users}
 
 @app.post("/post_users", response_model=List[User])
 def post_users(user: User):
     users.append(user)
-    return {"message": "Good post did", "List users: ": users}
+    return {"message": "Good post did ", "List users: ": users}
 
